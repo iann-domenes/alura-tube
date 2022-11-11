@@ -1,4 +1,5 @@
 import styled from "styled-components";
+// linha adicional
 
 export const StyledTimeline = styled.div`
   flex: 1;

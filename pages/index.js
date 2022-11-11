@@ -80,6 +80,7 @@ function Timeline(propriedades) {
   const playlistNames = Object.keys(propriedades.playlists);
   // Statement
   // Retorno por expressão
+  // Linha adicional
   return (
     <StyledTimeline>
       {playlistNames.map((playlistName) => {
