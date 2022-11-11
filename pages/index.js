@@ -2,7 +2,7 @@ import config from "../config.json";
 import styled from "styled-components";
 import { CSSReset } from "../src/components/CSSReset";
 import Menu from "../src/components/Menu";
-import { StyledTimeline } from "../src/components/Timeline";
+import { StyledTimeline } from "../src/components/TimeLine";
 
 function HomePage() {
   const estilosDaHomePage = {
@@ -22,9 +22,9 @@ function HomePage() {
       }}>
         <Menu />
         <Header />
-        <Timeline playlists={config.playlists}>
+        <TimeLine playlists={config.playlists}>
           Conteúdo
-        </Timeline>
+        </TimeLine>
       </div>
     </>
   );
@@ -75,7 +75,7 @@ function Header() {
   )
 }
 
-function Timeline(propriedades) {
+function TimeLine(propriedades) {
   // console.log("Dentro do componente", propriedades.playlists);
   const playlistNames = Object.keys(propriedades.playlists);
   // Statement
